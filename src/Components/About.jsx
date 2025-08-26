@@ -59,19 +59,19 @@ const About = () => {
 
             {/* Kidzee Preschool Section */}
             <div>
-              <h3 className="text-2xl font-bold text-fuchsia-800 mb-4">Kidzee Preschool</h3>
+              <h3 className="text-2xl font-bold text-fuchsia-800 mb-4">Accord Public School</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Kidzee Preschool is a leading chain of preschools located in India and Nepal backed by Zee Learn Ltd. With more than 
-                two decades of experience in the preschool industry, Kidzee has nurtured more than 1.5 million children throughout 
-                India. Being one of the largest preschools in India, Kidzee has 2000+ centres in 750+ cities in India and Nepal.
+                Accord Public School is a leading chain of preschools located in India and Nepal backed by Zee Learn Ltd. With more than 
+                two decades of experience in the preschool industry, Accord has nurtured more than 1.5 million children throughout 
+                India. Being one of the largest preschools in India, Accord has 2000+ centres in 750+ cities in India and Nepal.
               </p>
             </div>
 
             {/* Kidzee Advantage Section */}
             <div>
-              <h3 className="text-2xl font-bold text-fuchsia-800 mb-4">Kidzee Advantage</h3>
+              <h3 className="text-2xl font-bold text-fuchsia-800 mb-4">Accord Advantage</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Kidzee is a <span className="font-semibold text-gray-800">leader</span> and a trendsetter in <span className="font-semibold text-gray-800">Early Childhood Care and Education (ECCE)</span>. Our business partners' passion and 
+                Accord is a <span className="font-semibold text-gray-800">leader</span> and a trendsetter in <span className="font-semibold text-gray-800">Early Childhood Care and Education (ECCE)</span>. Our business partners' passion and 
                 drive are vital for our brand's success.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -79,7 +79,7 @@ const About = () => {
                 prescribes books/plays to be followed and so on to the ground.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Starting a preschool requires a strategic researching, planning, designing, and organising. <span className="font-semibold text-gray-800">Kidzee Professional research</span>, 
+                Starting a preschool requires a strategic researching, planning, designing, and organising. <span className="font-semibold text-gray-800">Accord Professional research</span>, 
                 makes this journey easier and rewarding for all our Business Partners.
               </p>
               <p className="text-gray-600 leading-relaxed">

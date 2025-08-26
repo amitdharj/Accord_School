@@ -7,10 +7,10 @@ const KidsPreschool = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-purple-700 mb-6">
-            Why Choose Kidzee Preschool?
+            Why Choose Accord Public School?
           </h1>
           <p className="text-gray-700 text-lg max-w-5xl mx-auto leading-relaxed">
-            Kidzee Preschool is your experienced trusted partner in providing exceptional early education for your child. Here's why Kidzee stands out as the preferred choice for parents seeking the best for their little ones
+            Accord Public School is your experienced trusted partner in providing exceptional early education for your child. Here's why Accord stands out as the preferred choice for parents seeking the best for their little ones
           </p>
         </div>
 
