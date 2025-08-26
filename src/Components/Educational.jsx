@@ -52,7 +52,7 @@ const EducationalAdventures = () => {
         {/* Left Arrow */}
         <button
           onClick={prevSlide}
-          className="absolute left-32 top-1/2 -translate-y-1/2 bg-white border rounded-full w-8 h-8 flex items-center justify-center shadow-md hover:scale-110 transition"
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white border rounded-full w-8 h-8 flex items-center justify-center shadow-md hover:scale-110 transition"
         >
           ←
         </button>
@@ -91,7 +91,7 @@ const EducationalAdventures = () => {
         {/* Right Arrow */}
         <button
           onClick={nextSlide}
-          className="absolute right-32 top-1/2 -translate-y-1/2 bg-white border rounded-full w-8 h-8 flex items-center justify-center shadow-md hover:scale-110 transition"
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white border rounded-full w-8 h-8 flex items-center justify-center shadow-md hover:scale-110 transition"
         >
           →
         </button>
