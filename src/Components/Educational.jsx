@@ -64,8 +64,8 @@ const EducationalAdventures = () => {
               key={index}
               initial={{ x: "100%", opacity: 0 }}
               animate={{ x: "0%", opacity: 1 }}
-              exit={{ x: "-100%", opacity: 0 }}
-              transition={{ duration: 0.6 }}
+              exit={{ x: "-50%", opacity: 0 }}
+              transition={{ duration: 0.7 }}
               className="flex justify-center gap-6"
             >
               {programs.slice(index, index + 3).map((program, i) => (
