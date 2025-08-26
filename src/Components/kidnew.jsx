@@ -79,7 +79,7 @@ const KidsPreschool = () => {
               <div className="relative mb-6">
                 <div className="w-48 h-48 bg-white rounded-lg shadow-lg overflow-hidden border-4 border-dashed border-purple-300 transform rotate-2 group-hover:rotate-0 transition-transform duration-300">
                   <img 
-                    src="https://images.unsplash.com/photo-1587614295999-6c1c3e955e5b?w=200&h=200&fit=crop&crop=faces" 
+                    src="/SeniorKg.png" 
                     alt="Children learning together"
                     className="w-full h-full object-cover"
                   />
