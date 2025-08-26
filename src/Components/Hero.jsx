@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-b from-purple-400 to-Purple-300 relative  pt-20 overflow-hidden">
+    <section className="bg-gradient-to-b from-purple-400 to-Purple-300 relative  pt-20 pb-12  overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         
         {/* Left Side Content */}
@@ -40,12 +40,12 @@ const HeroSection = () => {
       <img
         src="/hotair.png"
         alt="Hot air balloon"
-        className="absolute bottom-10 left-20 w-16 animate-bounce"
+        className="absolute bottom-10 left-20 w-18 pt-24 animate-bounce"
       />
       <img
         src="/cloude.png"
         alt="Cloud"
-        className="absolute bottom-0 right-0 w-32 opacity-80 animate-pulse duration-700"
+        className="absolute bottom-0 right-0 w-40 opacity-80 pr-10 animate-pulse duration-700"
       />
     </section>
   );
