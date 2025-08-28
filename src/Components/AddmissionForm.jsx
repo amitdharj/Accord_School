@@ -8,7 +8,7 @@ const AdmissionForm = () => {
         {/* Left Content */}
         <div className="text-white text-center lg:text-left lg:w-1/2 space-y-6">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-snug">
-            Kidzee Preschool Admissions Open for 2025-26. <br /> Enquire Now
+            Little Accord Public School Admissions Open for 2025-26. <br /> Enquire Now
           </h1>
 
           {/* Steps Section */}
