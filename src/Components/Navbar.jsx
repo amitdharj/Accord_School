@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,14 +52,15 @@ const Navbar = () => {
         <h1 className="text-2xl font-bold font-sans-serif text-fuchsia-800">
           Little Accord Public School
         </h1>
+       
         
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-7 text-gray-700">
-          <li className="hover:text-fuchsia-800 cursor-pointer transition-colors duration-200">Home</li>
-          <li className="hover:text-fuchsia-800 cursor-pointer transition-colors duration-200">About</li>
-          <li className="hover:text-fuchsia-800 cursor-pointer transition-colors duration-200">Programs</li>
-          <li className="hover:text-fuchsia-800 cursor-pointer transition-colors duration-200">Gallery</li>
-          <li className="hover:text-fuchsia-800 cursor-pointer transition-colors duration-200">Contact</li>
+        <ul className="hidden md:flex space-x-7 font-sans font-medium text-gray-700">
+          <li className="hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><Link to="/">Home</Link></li>
+          <li className="hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><Link to="/AboutSection">About</Link></li>
+          <li className="hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><Link to="/">Programs</Link></li>
+          <li className="hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><Link to="/">Gallery</Link></li>
+          <li className="hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><Link to="/AddmissionForm">Contact</Link></li>
         </ul>
         
         {/* Mobile Menu Button */}
@@ -74,17 +76,17 @@ const Navbar = () => {
       {/* Mobile Dropdown */}
       {menuOpen && (
         <motion.ul
-          className="md:hidden bg-white text-gray-700 flex flex-col px-6 pb-4 space-y-2 border-t border-gray-100"
+          className="md:hidden bg-stone-100 text-gray-700 flex flex-col px-6 pb-4 space-y-2 border-t border-gray-100"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.5 }}
         >
-          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200">Home</li>
-          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200">About</li>
-          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200">Programs</li>
-          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200">Gallery</li>
-          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200">Contact</li>
+          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><a href="/">Home</a></li>
+          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><a href="http://">About</a></li>
+          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><a href="http://">Programs</a></li>
+          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><a href="http://">Gallery</a></li>
+          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><a href="http://">Contact</a></li>
         </motion.ul>
       )}
     </motion.nav>

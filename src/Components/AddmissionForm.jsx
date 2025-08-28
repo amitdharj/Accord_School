@@ -1,8 +1,8 @@
 import React from "react";
 
-const KidzeeAdmission = () => {
+const AdmissionForm = () => {
   return (
-    <div className="bg-gradient-to-r from-purple-700 to-purple-500 py-12 px-4 relative overflow-hidden rounded-2xl">
+    <div className="bg-gradient-to-r from-purple-100 to-purple-400 top-16 mb-12 py-12 px-4 relative overflow-hidden rounded-2xl">
       {/* Title Section */}
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-10">
         {/* Left Content */}
@@ -18,7 +18,7 @@ const KidzeeAdmission = () => {
               "We will invite you to the nearest Kidzee preschool",
               "Visit the School for Campus Tour",
               "Join the Kidzee Family",
-            ].map((step, i) => (
+             ].map((step, i) => (
               <div
                 key={i}
                 className="bg-purple-600 bg-opacity-50 p-4 rounded-xl shadow-lg hover:scale-105 transform transition duration-300 text-center"
@@ -64,4 +64,4 @@ const KidzeeAdmission = () => {
   );
 };
 
-export default KidzeeAdmission;
+export default AdmissionForm;

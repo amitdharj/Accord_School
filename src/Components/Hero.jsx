@@ -19,8 +19,8 @@ const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-16 right-26 opacity-40">
-        <div className="w-16 h-16 rounded-full border-2 border-purple-800 flex items-center justify-center">
-          <div className="w-8 h-8 rounded-full border-2 border-purple-800"></div>
+        <div className="w-16 h-16 rounded-full border-4 border-purple-800 flex items-center justify-center">
+          <div className="w-8 h-8 rounded-full border-3 border-red-800"></div>
         </div>
       </div>
         
