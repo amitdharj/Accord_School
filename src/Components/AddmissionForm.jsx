@@ -21,7 +21,7 @@ const AdmissionForm = () => {
              ].map((step, i) => (
               <div
                 key={i}
-                className="bg-purple-600 bg-opacity-50 p-4 rounded-xl shadow-lg hover:scale-105 transform transition duration-300 text-center"
+                className="bg-fuchsia-800 bg-opacity-50 p-4 rounded-xl shadow-lg hover:scale-105 transform transition duration-300 text-center"
               >
                 <h2 className="text-3xl font-extrabold mb-2">{i + 1}</h2>
                 <p className="text-sm font-medium">{step}</p>

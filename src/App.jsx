@@ -12,6 +12,7 @@ import About from './Components/About'
 import Brain from './Components/BrainPage'
 import AboutSection from './Components/AboutSection';
 import AdmissionForm from './Components/AddmissionForm';
+import AccordAdvantage from './Components/AccordAdvantage';
 
 
 
@@ -23,6 +24,7 @@ function App() {
   return (
 
 <HashRouter>
+  <div></div>
       <Navbar />
       <Routes>
         <Route
@@ -41,11 +43,14 @@ function App() {
         />
 
          <Route path="/AboutSection" element={<AboutSection />} />
+         <Route path="/AccordAdvantage" element={<AccordAdvantage />} />
          <Route path="/AddmissionForm" element={<AdmissionForm />} />
+         
          {/* <Footer /> */}
        
       </Routes>
       <Footer />
+      
   </HashRouter>
   );
 }
