@@ -82,11 +82,11 @@ const Navbar = () => {
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5 }}
         >
-          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><a href="/">Home</a></li>
-          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><a href="http://">About</a></li>
-          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><a href="http://">Programs</a></li>
-          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><a href="http://">Gallery</a></li>
-          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><a href="http://">Contact</a></li>
+          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><Link to="/">Home</Link></li>
+          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><Link to="/AboutSection">About</Link></li>
+          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><Link to="/">Programs</Link></li>
+          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><Link to="/">Gallery</Link></li>
+          <li className="py-2 hover:text-fuchsia-800 cursor-pointer transition-colors duration-200"><Link to="/AddmissionForm">Contact</Link></li>
         </motion.ul>
       )}
     </motion.nav>
