@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import './App.css'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
@@ -22,7 +22,7 @@ function App() {
 
   return (
 
-<Router>
+<HashRouter>
       <Navbar />
       <Routes>
         <Route
@@ -46,7 +46,7 @@ function App() {
        
       </Routes>
       <Footer />
-  </Router>
+  </HashRouter>
   );
 }
 
