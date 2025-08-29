@@ -1,142 +1,147 @@
-import React from 'react';
-import { Shield, BookOpen, Users, Lightbulb, Smartphone, Award } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const AccordAdvantage = () => {
-  const goldenEdges = [
-    {
-      icon: <BookOpen className="w-6 h-6" />,
-      text: "Focus on What is Right for the Child."
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      text: "Safety and security is a priority."
-    },
-    {
-      icon: <Award className="w-6 h-6" />,
-      text: "Integrated Pentemind Curriculum"
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      text: "I Care and ECE trained facilitators"
-    },
-    {
-      icon: <Lightbulb className="w-6 h-6" />,
-      text: "An innovative pedagogy aligned to NEP 2020 designed to help nurture collaborative team player and breakthrough leaders"
-    },
-    {
-      icon: <Smartphone className="w-6 h-6" />,
-      text: "Kidzee App"
-    }
-  ];
-
+const AboutSection = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br top-14 mb-14 from-purple-100 via-purple-50 to-pink-50 relative overflow-hidden">
-      {/* Background Decorative Elements */}
-      <div className="absolute top-10 right-10 opacity-20">
-        <div className="w-32 h-32 rounded-full border-4 border-purple-300 relative">
-          <div className="absolute inset-4 rounded-full bg-gradient-to-br from-purple-200 to-pink-200"></div>
-          <div className="absolute top-6 left-6 w-4 h-4 bg-purple-400 rounded-full"></div>
-          <div className="absolute bottom-8 right-8 w-3 h-3 bg-pink-400 rounded-full"></div>
-        </div>
+    <div className="min-h-screen top-12 mb-12 bg-gradient-to-br from-purple-100 via-purple-50 to-yellow-100 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-300 rounded-full opacity-80 -translate-y-32 translate-x-32"></div>
+      <div className="absolute bottom-10 left-10 w-20 h-20 border-4 border-purple-300 rounded-lg rotate-12 opacity-60"></div>
+      <div className="absolute top-1/2 right-20 opacity-30">
+        <svg
+          width="100"
+          height="100"
+          viewBox="0 0 100 100"
+          className="text-purple-300"
+        >
+          <path
+            d="M20 50 Q50 20 80 50 Q50 80 20 50"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="3"
+          />
+          <circle cx="30" cy="40" r="3" fill="currentColor" />
+          <circle cx="70" cy="40" r="3" fill="currentColor" />
+        </svg>
       </div>
-      
-      <div className="absolute bottom-20 left-10 opacity-20">
-        <div className="w-24 h-24 bg-gradient-to-br from-purple-200 to-pink-200 rounded-xl transform rotate-12">
-          <div className="w-full h-full border-4 border-purple-300 rounded-xl flex items-center justify-center">
-            <BookOpen className="w-8 h-8 text-purple-400" />
-          </div>
-        </div>
+      <div className="absolute bottom-20 right-1/4 opacity-40">
+        <svg
+          width="80"
+          height="60"
+          viewBox="0 0 80 60"
+          className="text-purple-200"
+        >
+          <path
+            d="M10 50 Q20 10 40 30 Q60 10 70 50"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="4"
+            strokeLinecap="round"
+          />
+        </svg>
       </div>
 
-      <div className="container mx-auto px-6 py-16 max-w-6xl relative z-10">
-        {/* Main Quote Section */}
-        <div className="text-center mb-16">
-          <div className="relative inline-block">
-            <div className="absolute -top-4 -left-4 text-6xl text-purple-300 font-serif">"</div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-purple-800 leading-tight max-w-5xl mx-auto mb-8">
-              Ranked amongst the top 100 franchise opportunities by Franchise India for 2022, 
-              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"> we are the experts in Early Childhood Care and Education.</span>
-            </h1>
-            <div className="absolute -bottom-4 -right-4 text-6xl text-purple-300 font-serif">"</div>
-          </div>
-        </div>
-
-        {/* Mission Statement */}
-        <div className="text-center mb-16">
-          <div className="bg-white/30 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20">
-            <p className="text-xl md:text-2xl text-gray-700 font-medium max-w-4xl mx-auto leading-relaxed">
-              We encourage, educate, and equip today's children to be tomorrow's leaders.
-            </p>
-          </div>
-        </div>
-
-        {/* Golden Five-Point Section */}
-        <div className="mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-12 text-center">
-            The Golden Five-Point Kidzee Edges:
-          </h2>
+      <div className="container mx-auto px-6 py-12 max-w-6xl relative z-10">
+        {/* Navigation Tabs */}
+        <div className="flex flex-wrap gap-4 mb-12 justify-center lg:justify-start">
+          <Link to="/AboutSection" className="bg-fuchsia-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-110">
+            Legacy
+          </Link>
+          <Link to="/AccordAdvantage" className="bg-fuchsia-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-110">
+            Accord Advantage
+          </Link>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {goldenEdges.map((edge, index) => (
-              <div
-                key={index}
-                className="bg-white/40 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/30 hover:shadow-xl hover:bg-white/50 transition-all duration-300 group hover:-translate-y-2"
-              >
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
-                    {edge.icon}
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-gray-700 font-medium leading-relaxed">
-                      {edge.text}
-                    </p>
-                  </div>
-                </div>
-                
-                {/* Animated border */}
-                <div className="w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-500 mt-4"></div>
+          <Link className="bg-fuchsia-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-110">
+            Vision & Mission
+          </Link>
+          <Link className="bg-fuchsia-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-110">
+            Awards & Recognition
+          </Link>
+        </div>
+
+        {/* Content Section */}
+        <div className="grid lg:grid-cols-12 gap-12 items-center">
+          {/* Left Side - Icon */}
+          <div className="lg:col-span-2 flex justify-center lg:justify-start">
+            <div className="relative">
+              <div className="w-24 h-24 bg-white rounded-2xl shadow-lg flex items-center justify-center transform rotate-3 hover:rotate-0 transition-transform duration-300">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  className="text-purple-600"
+                >
+                  <path
+                    d="M12 8h24c2.2 0 4 1.8 4 4v24c0 2.2-1.8 4-4 4H12c-2.2 0-4-1.8-4-4V12c0-2.2 1.8-4 4-4z"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M16 16h16M16 24h12M16 32h8"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                  <circle cx="32" cy="32" r="2" fill="currentColor" />
+                </svg>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl p-8 text-white shadow-2xl">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to Start Your Kidzee Franchise Journey?
-            </h3>
-            <p className="text-lg mb-6 opacity-90">
-              Join India's leading early childhood education franchise and make a difference in children's lives.
-            </p>
-            <button className="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
-              Get Started Today
-            </button>
-          </div>
-        </div>
-
-        {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-          {[
-            { number: "100+", label: "Top Franchise" },
-            { number: "2022", label: "Franchise India" },
-            { number: "NEP 2020", label: "Aligned Curriculum" },
-            { number: "1000+", label: "Happy Centers" }
-          ].map((stat, index) => (
-            <div key={index} className="text-center bg-white/30 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-              <div className="text-3xl font-bold text-purple-700 mb-2">{stat.number}</div>
-              <div className="text-gray-600 font-medium">{stat.label}</div>
+              <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full"></div>
             </div>
-          ))}
+          </div>
+
+          {/* Main Content */}
+          <div className="lg:col-span-10 space-y-8">
+            {/* Title */}
+            <div className="space-y-4">
+              <h1 className="text-5xl lg:text-6xl font-bold text-purple-800 leading-tight">
+                Accord Advantage
+              </h1>
+              <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-purple-400 rounded-full"></div>
+            </div>
+
+            {/* Subtitle */}
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 leading-relaxed">
+              Little Accord Public School
+            </h2>
+
+            {/* Description */}
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-purple-100">
+              <p className="text-lg text-gray-700 leading-relaxed font-medium">
+                We believe that there is 'unique potential' in every child, and
+                Accord nurtures it. Touted to be one of the best preschools in
+                India, we nurture and shape minds with the help of our
+                best-in-class age appropriate progressive curriculum. We are
+                changing the face of early childhood education with consistent
+                upgradation and innovation to meet the current needs with a
+                proactive future, focussed on grooming them to be 'ever-ready
+                for life'. Our commitment towards quality education also values
+                aspects like self-reliance, peer interaction, and individual
+                growth. Our solid foundation and polished business model makes
+                it profitable for all the stakeholders involved.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Floating Animation Elements */}
-      <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-purple-300 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
-      <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-pink-300 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute bottom-1/4 left-1/3 w-5 h-5 bg-purple-200 rounded-full animate-bounce" style={{ animationDelay: '2s' }}></div>
+      {/* Additional decorative elements */}
+      <div className="absolute bottom-0 left-0 w-40 h-40 opacity-20">
+        <svg viewBox="0 0 100 100" className="text-purple-300 w-full h-full">
+          <circle cx="20" cy="80" r="3" fill="currentColor" />
+          <circle cx="40" cy="85" r="2" fill="currentColor" />
+          <circle cx="60" cy="75" r="4" fill="currentColor" />
+          <circle cx="80" cy="90" r="2" fill="currentColor" />
+          <path
+            d="M15 75 Q30 60 45 80 Q60 55 85 85"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          />
+        </svg>
+      </div>
     </div>
   );
 };
 
-export default AccordAdvantage;
+export default AboutSection;

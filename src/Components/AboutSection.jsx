@@ -44,19 +44,19 @@ const AboutSection = () => {
       <div className="container mx-auto px-6 py-12 max-w-6xl relative z-10">
         {/* Navigation Tabs */}
         <div className="flex flex-wrap gap-4 mb-12 justify-center lg:justify-start">
-          <button className="bg-purple-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">
+          <Link className="bg-fuchsia-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-110">
             Legacy
-          </button>
-          <Link to="/AccordAdvantage" className="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-50 transition-all duration-300 transform hover:scale-105">
+          </Link>
+          <Link to="/AccordAdvantage" className="bg-fuchsia-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-110">
             Accord Advantage
           </Link>
           
-          <button className="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-50 transition-all duration-300 transform hover:scale-105">
+          <Link className="bg-fuchsia-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-110">
             Vision & Mission
-          </button>
-          <button className="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-50 transition-all duration-300 transform hover:scale-105">
+          </Link>
+          <Link className="bg-fuchsia-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-110">
             Awards & Recognition
-          </button>
+          </Link>
         </div>
 
         {/* Content Section */}
