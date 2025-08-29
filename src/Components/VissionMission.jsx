@@ -47,14 +47,14 @@ const VisionMission = () => {
           <NavLink to="/AboutSection" className={({ isActive }) =>
             isActive
               ? "bg-fuchsia-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 transform scale-105"
-              : "bg-stone-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
+              : "bg-stone-300 text-black px-6 py-3 rounded-full font-semibold shadow-md shadow-gray-400 hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
           }>
             Legacy
           </NavLink>
           <NavLink to="/AccordAdvantage" className={({ isActive }) =>
             isActive
               ? "bg-fuchsia-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 transform scale-105"
-              : "bg-stone-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
+              : "bg-stone-300 text-black px-6 py-3 rounded-full font-semibold shadow-md shadow-gray-400 hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
           }>
             Accord Advantage
           </NavLink>
@@ -62,17 +62,11 @@ const VisionMission = () => {
           <NavLink to="/VisionMission" className={({ isActive }) =>
             isActive
               ? "bg-fuchsia-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 transform scale-105"
-              : "bg-stone-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
+              : "bg-stone-300 text-black px-6 py-3 rounded-full font-semibold shadow-md shadow-gray-400 hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
           }>
             Vision & Mission
           </NavLink>
-          <NavLink to="/AwardsRecognition" className={({ isActive }) =>
-            isActive
-              ? "bg-fuchsia-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 transform scale-105"
-              : "bg-stone-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
-          }>
-            Awards & Recognition
-          </NavLink>
+          
         </div>
 
         {/* Content Section */}
