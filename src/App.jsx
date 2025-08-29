@@ -13,6 +13,7 @@ import Brain from './Components/BrainPage'
 import AboutSection from './Components/AboutSection';
 import AdmissionForm from './Components/AddmissionForm';
 import AccordAdvantage from './Components/AccordAdvantage';
+import VisionMission from './Components/VissionMission';
 
 
 
@@ -45,6 +46,7 @@ function App() {
          <Route path="/AboutSection" element={<AboutSection />} />
          <Route path="/AccordAdvantage" element={<AccordAdvantage />} />
          <Route path="/AddmissionForm" element={<AdmissionForm />} />
+         <Route path="/VisionMission" element={<VisionMission />} />
          
          {/* <Footer /> */}
        

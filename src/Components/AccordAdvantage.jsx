@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -44,19 +44,35 @@ const AboutSection = () => {
       <div className="container mx-auto px-6 py-12 max-w-6xl relative z-10">
         {/* Navigation Tabs */}
         <div className="flex flex-wrap gap-4 mb-12 justify-center lg:justify-start">
-          <Link to="/AboutSection" className="bg-fuchsia-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-110">
+          <NavLink to="/AboutSection" className={({ isActive }) =>
+            isActive
+              ? "bg-fuchsia-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 transform scale-105"
+              : "bg-stone-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
+          }>
             Legacy
-          </Link>
-          <Link to="/AccordAdvantage" className="bg-fuchsia-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-110">
+          </NavLink>
+          <NavLink to="/AccordAdvantage" className={({ isActive }) =>
+            isActive
+              ? "bg-fuchsia-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 transform scale-105"
+              : "bg-stone-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
+          }>
             Accord Advantage
-          </Link>
-          
-          <Link className="bg-fuchsia-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-110">
+          </NavLink>
+
+          <NavLink to="/VisionMission" className={({ isActive }) =>
+            isActive
+              ? "bg-fuchsia-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 transform scale-105"
+              : "bg-stone-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
+          }>
             Vision & Mission
-          </Link>
-          <Link className="bg-fuchsia-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-110">
+          </NavLink>
+          <NavLink to="/AwardsRecognition" className={({ isActive }) =>
+            isActive
+              ? "bg-fuchsia-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 transform scale-105"
+              : "bg-stone-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
+          }>
             Awards & Recognition
-          </Link>
+          </NavLink>
         </div>
 
         {/* Content Section */}

@@ -1,7 +1,7 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 
-const AboutSection = () => {
+const VisionMission = () => {
   return (
     <div className="min-h-screen top-12 mb-12 bg-gradient-to-br from-purple-100 via-purple-50 to-yellow-100 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -44,17 +44,17 @@ const AboutSection = () => {
       <div className="container mx-auto px-6 py-12 max-w-6xl relative z-10">
         {/* Navigation Tabs */}
         <div className="flex flex-wrap gap-4 mb-12 justify-center lg:justify-start">
-          <NavLink className={({ isActive }) =>
+          <NavLink to="/AboutSection" className={({ isActive }) =>
             isActive
               ? "bg-fuchsia-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 transform scale-105"
-              : "bg-stone-500 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
+              : "bg-stone-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
           }>
             Legacy
           </NavLink>
           <NavLink to="/AccordAdvantage" className={({ isActive }) =>
             isActive
               ? "bg-fuchsia-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 transform scale-105"
-              : "bg-stone-500 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
+              : "bg-stone-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
           }>
             Accord Advantage
           </NavLink>
@@ -62,14 +62,14 @@ const AboutSection = () => {
           <NavLink to="/VisionMission" className={({ isActive }) =>
             isActive
               ? "bg-fuchsia-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 transform scale-105"
-              : "bg-stone-500 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
+              : "bg-stone-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
           }>
             Vision & Mission
           </NavLink>
           <NavLink to="/AwardsRecognition" className={({ isActive }) =>
             isActive
               ? "bg-fuchsia-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 transform scale-105"
-              : "bg-stone-500 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
+              : "bg-stone-400 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-fuchsia-900 transition-all duration-300 transform hover:scale-105"
           }>
             Awards & Recognition
           </NavLink>
@@ -111,7 +111,7 @@ const AboutSection = () => {
             {/* Title */}
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-purple-800 leading-tight">
-                Legacy
+                Vision & Mission
               </h1>
               <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-purple-400 rounded-full"></div>
             </div>
@@ -160,4 +160,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default VisionMission;
